@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto;
+}
+.mainheaddiv{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    width:139px;
+    gap: 10px;
+    background-color: #1892D3;
+    color: #FFFFFF;
+}
+.navsearch{
+    grid-column: 2/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.mainheaddiv h1{
+    font-weight: bolder;
+    font: 1rem;
+    
+}
+.navcontent{
+    padding-top: 9px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.navsearch input{
+    width: 430px;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color: rgba(128, 128, 128, 0.548);
+}
+.navicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.navicon img{
+    width: 30px;
+    height:30px;
+    border-radius: 100%;
+}
+.navicon h1{
+    font-size: small;
+
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    /* gap: 10%; */
+}
+.one{
+    grid-column:1/2 ;
+    grid-row:1/6 ;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding-right: 36.9px;
+    padding-top: 30px;
+    background-color: #1892D3;
+    color: #FFFFFF;
+}
+.firsticons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.icontext{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.icontext h2{
+    font-size: 1rem;
+}
+
+.two{
+    grid-column:2/6 ;
+    grid-row:1/2 ;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 70px;
+
+}
+.userdiv{
+    display: flex;
+    gap:5px;
+    padding-left: 50px;
+}
+.userdiv img{
+    width: 50px;
+    height:50px;
+    border-radius: 60px;
+}
+.usertext{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+.usertext p{
+    font-size: 0.7rem;
+}
+.usertext h2{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.userbutton{
+    padding-right: 20px;
+    display: flex;
+    gap: 15px;
+
+}
+.userbutton button{
+    border: 2px solid #1892D3;
+    width: 70px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #1892D3;
+    color: #FFFFFF;
+}
+.three{
+    grid-column:2/6 ;
+    grid-row:2/6 ;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    gap: 20px;
+    background-color: #DBE2EA;
+    padding-top:50px ;
+}
+.firstcard{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+}
+.header3{
+    grid-column: 1/6;
+    grid-row: 1/1;
+}
+#super{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#less{
+    grid-column: 3/6;
+    grid-row: 2/3;
+}
+#imposible{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#easy{
+    grid-column: 3/6;
+    grid-row: 3/4;
+}
+#Ad{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+#memory{
+    grid-column: 3/6;
+    grid-row: 4/5;
+}
+.cards{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    width: 210px;
+    height: 100px;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+
+.secondcard{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    background-color: #DBE2EA;
+}
+.card4{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.card3{
+    grid-column: 1/5;
+    grid-row: 3/4;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.cards-secondsiv{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: 130px;
+    padding: 10%;
+    background-color: #FFFFFF;
+}
+.card{
+    gap: 10px;
+    text-align: left;
+}
+.card h4{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.card p{
+    font-size: 0.6rem;
+}
+.cardz{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFFFFF;
+    width: 150px;
+    padding: 6%;
+    border-radius: 10px;
+    background-color: white;
+}
+.threeicons{
+    text-align: right;
+    padding-right: 20px;
+    gap: 10px;
+}
+.imagetrending{
+    display: flex;
+    gap: 18px;
+}
+.imagetrending img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
