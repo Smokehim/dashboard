@@ -2,6 +2,19 @@
     margin:0;
     padding:0;
 }
+#layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+.header{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+main{
+    grid-column: 1/5;
+    grid-row: 2/5;
+}
 .navbar{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -32,7 +45,7 @@
 }
 .navcontent{
     padding-top: 9px;
-    padding-right: 8px;
+    padding-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,14 +55,14 @@
 .navsearch input{
     width: 430px;
     border-radius: 10px;
-    border: 2px solid;
+    border: 2px solid rgba(128, 128, 128, 0.548);
     background-color: rgba(128, 128, 128, 0.548);
 }
 .navicon{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap:20px;
 }
 .navicon img{
     width: 30px;
@@ -57,6 +70,7 @@
     border-radius: 100%;
 }
 .navicon h1{
+    white-space: nowrap;
     font-size: small;
 
 }
@@ -73,18 +87,20 @@ main{
     flex-direction: column;
     gap: 5%;
     padding-right: 36.9px;
-    padding-top: 30px;
+    padding-top: 20px;
     background-color: #1892D3;
     color: #FFFFFF;
 }
 .firsticons{
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
     gap: 30px;
 }
 .icontext{
     display: flex;
-    justify-content: center;
+    justify-items: center;
     gap: 10px;
 }
 .icontext h2{
@@ -182,19 +198,38 @@ main{
     grid-row: 4/5;
 }
 .cards{
-    padding-top: 10px;
-    padding-left: 10px;
-    display: flex;
+    /* padding-top: 10px;
+    padding-left: 10px; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     width: 210px;
-    height: 100px;
-    flex-direction: column;
+    height: 120px;
     gap: 10px;
     border: 2px solid #FFFFFF;
-    border-radius: 10px;
+    border-radius: 9px;
+    border-left: 5px solid #e4b43d;
     background-color: #FFFFFF;
+    text-align: left;
 }
-
-
+.cards h4{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    font-size: 0.9rem;
+}
+.cards p{
+    grid-column: 1/5;
+    grid-row: 2/4;
+    font-size: 0.7rem;
+}
+.threeicons{
+    grid-column: 1/5;
+    grid-row: 4/6;
+    text-align: right;
+    padding-right: 20px;
+    gap: 10px;
+}
 .secondcard{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -247,12 +282,9 @@ main{
     padding: 6%;
     border-radius: 10px;
     background-color: white;
-}
-.threeicons{
-    text-align: right;
-    padding-right: 20px;
     gap: 10px;
 }
+
 .imagetrending{
     display: flex;
     gap: 18px;
@@ -261,4 +293,15 @@ main{
     width: 40px;
     height: 40px;
     border-radius: 100px;
+}
+.rowsiv{
+    display: flex;
+    flex-direction: column;
+}
+.rowsiv h4{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.rowsiv p{
+    font-size: 0.6rem;
 }
